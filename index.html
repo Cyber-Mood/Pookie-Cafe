@@ -1,0 +1,322 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pookie Cafe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="main-header">
+        <nav class="navbar container">
+            <a href="#" class="nav-logo">☕ Pookie Cafe</a>
+            
+            <div class="nav-menu-wrapper">
+                <ul class="nav-menu">
+                    <li><a href="#home" class="nav-link">Home</a></li>
+                    <li><a href="about.html" class="nav-link">About</a></li>
+                    <li><a href="menu.html" class="nav-link">Menu</a></li>
+                    <li><a href="about.html#team" class="nav-link">Our Team</a></li>
+                    <li><a href="#testimonial" class="nav-link">Testimonial</a></li>
+                    <li><a href="#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="#location" class="nav-link">Location</a></li> 
+                    <li><a href="#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-toggle-wrapper">
+                <button id="theme-toggle" class="theme-toggle" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false" aria-controls="nav-menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="hero-section" id="home">
+    <div class="hero-video-background">
+        <video autoplay loop muted playsinline poster="media/hero.jpeg">
+            <source src="media/hero.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content container">
+        <div class="hero-text">
+            <h1 class="hero-title">Pookie Cafe</h1>
+            <p class="hero-subtitle">Make your day great with our special coffee!</p>
+            <p class="hero-description">Welcome to our coffee paradise, where every bean tells a story and every cup speaks joy.</p>
+            <div class="hero-buttons">
+                <a href="#menu" class="btn btn-primary">Order Now</a>
+                <a href="#contact" class="btn btn-secondary">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</section>
+
+        <section class="menu-section" id="menu">
+            <div class="container">
+                <h2 class="section-title reveal">🌟 Customer Favorites</h2>
+                
+                <div class="menu-filters reveal">
+                    <button class="filter-btn active" data-filter="all">All</button>
+                    <button class="filter-btn" data-filter="hot">Hot Coffee</button>
+                    <button class="filter-btn" data-filter="classic">Classics</button>
+                </div>
+
+                <div class="menu-grid">
+                    <div class="menu-card reveal" data-category="hot">
+                        <img src="media/cappu.jpeg" loading="lazy" alt="Cappuccino" class="menu-card-img" />
+                        <div class="menu-card-body">
+                            <h3>Cappuccino</h3>
+                            <p>Espresso with steamed milk and foam.</p>
+                            <span class="price">$4.50</span>
+                        </div>
+                    </div>
+                    <div class="menu-card reveal" data-category="hot">
+                        <img src="media/latte.jpg" loading="lazy" alt="Latte" class="menu-card-img" />
+                        <div class="menu-card-body">
+                            <h3>Latte</h3>
+                            <p>Espresso with steamed milk and light foam.</p>
+                            <span class="price">$4.75</span>
+                        </div>
+                    </div>
+                    <div class="menu-card reveal" data-category="pastry">
+                        <img src="media/fudgy.jpg" loading="lazy" alt="Chocolate Brownie" class="menu-card-img" />
+                        <div class="menu-card-body">
+                            <h3>Fudgy Chocolate Brownie</h3>
+                            <p>Rich, dense, and decadent. The perfect chocolatey treat.</p>
+                            <span class="price">$3.75</span>
+                        </div>
+                    </div>
+                </div>
+                <div class="view-full-menu-wrapper">
+                    <a href="menu.html" class="btn btn-primary">View Full Menu</a>
+                </div>
+            </div>
+        </section>
+        
+
+<section class="testimonial-section" id="testimonial">
+    <div class="container">
+        <h2 class="section-title reveal">What Our Customers Say</h2>
+        
+        <div class="testimonial-carousel">
+            <div class="testimonial-track">
+                <div class="testimonial-slide">
+                    <blockquote class="testimonial-card">
+                        <p>"I loved the cold coffee. That was heaven. And the chocolate waffle was soooo delicious."</p>
+                        <footer>- Drishti</footer>
+                    </blockquote>
+                </div>
+                <div class="testimonial-slide">
+                    <blockquote class="testimonial-card">
+                        <p>"The staff was great, so does the coffee. And the brownies was cherry on the top."</p>
+                        <footer>- Lavony</footer>
+                    </blockquote>
+                </div>
+                <div class="testimonial-slide">
+                    <blockquote class="testimonial-card">
+                        <p>"A cozy little spot with the best brownies and cappuccino in Sylhet. A must-visit for any coffee lover!"</p>
+                        <footer>- Mayra</footer>
+                    </blockquote>
+                </div>
+                <div class="testimonial-slide">
+                    <blockquote class="testimonial-card">
+                        <p>"The crispy chicken sandwich was sooo delicious, just mmmmmmmmm"</p>
+                        <footer>- Anas</footer>
+                    </blockquote>
+                </div>
+                </div>
+            
+            <div class="carousel-nav">
+                <button class="carousel-btn prev-btn">&larr;</button>
+                <button class="carousel-btn next-btn">&rarr;</button>
+            </div>
+        </div>
+
+    </div>
+</section>
+        
+        <section class="gallery-section" id="gallery">
+            <div class="container">
+                <h2 class="section-title reveal">Gallery</h2>
+                <div class="gallery-grid">
+                    <div class="gallery-item reveal"><img src="https://images.pexels.com/photos/2159065/pexels-photo-2159065.jpeg" loading="lazy" alt="Cafe bar area"></div>
+                    <div class="gallery-item reveal"><img src="https://images.pexels.com/photos/1695052/pexels-photo-1695052.jpeg" loading="lazy" alt="Close up on coffee beans"></div>
+                    <div class="gallery-item reveal"><img src="https://images.pexels.com/photos/1024359/pexels-photo-1024359.jpeg" loading="lazy" alt="Overhead view of the cafe"></div>
+                    <div class="gallery-item reveal"><img src="https://images.pexels.com/photos/433145/pexels-photo-433145.jpeg" loading="lazy" alt="Detailed latte art on a coffee"></div>
+                </div>
+            </div>
+        </section>
+
+        <section class="blog-section" id="blog">
+    <div class="container">
+        <h2 class="section-title reveal">The Pookie Journal</h2>
+        <div class="blog-grid">
+
+            <div class="post-card reveal">
+                <img src="media/cinn.jpg" loading="lazy" alt="Cinnamon sticks and coffee beans" class="post-card-image">
+                <div class="post-card-content">
+                    <span class="post-card-date">August 26, 2025</span>
+                    <h3 class="post-card-title">Getting Ready for Autumn: Our New Spice Lattes</h3>
+                    <p>As the weather begins to cool, we're warming up our menu with some exciting new seasonal drinks. Here's a sneak peek...</p>
+                    <button class="post-card-link">Read More &rarr;</button>
+                </div>
+                <div class="full-post-content" style="display: none;">
+                    <h2>The Star of the Show: Cinnamon Spice Latte</h2>
+                    <p>Forget everything you thought you knew about pumpkin spice. Our new Cinnamon Spice Latte is a carefully crafted blend of real cinnamon, nutmeg, a hint of cardamom, and our signature dark roast espresso. It’s like a warm hug in a mug, perfectly balanced and not too sweet.</p>
+                    <p>We've spent weeks testing different spice combinations to create a flavor that is both nostalgic and refreshingly new. We can't wait for you to try it.</p>
+                </div>
+            </div>
+
+            <div class="post-card reveal">
+                <img src="https://images.unsplash.com/photo-1511920170033-f8396924c348" loading="lazy" alt="Barista pouring latte art" class="post-card-image">
+                <div class="post-card-content">
+                    <span class="post-card-date">August 15, 2025</span>
+                    <h3 class="post-card-title">A Day in the Life of a Pookie Cafe Barista</h3>
+                    <p>Ever wonder what goes on behind the counter? Follow along for a typical day filled with tamping, steaming, and serving smiles.</p>
+                    <button class="post-card-link">Read More &rarr;</button>
+                </div>
+                <div class="full-post-content" style="display: none;">
+                    <h2>Early Morning Prep</h2>
+                    <p>Our day starts before the sun is up, dialing in the espresso machine to make sure the first shot of the day is as perfect as the last. We grind our beans fresh for every single cup.</p>
+                </div>
+            </div>
+            
+        </div>
+    </div>
+</section>
+      
+<section class="map-section" id="location">
+    <div class="container reveal">
+        <h2 class="section-title">Come Find Us!</h2>
+        <div class="map-container">
+            <iframe 
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1463.8028915488976!2d91.97215449666066!3d24.930161943806528!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3750552bc71c899d%3A0x804e438bcc32b390!2sSylhet%20Metropolitan%20University!5e1!3m2!1sen!2sbd!4v1756213009619!5m2!1sen!2sbd" 
+                width="100%" 
+                height="450" 
+                style="border:0;" 
+                allowfullscreen="" 
+                loading="lazy" 
+                referrerpolicy="no-referrer-when-downgrade"
+                title="Location of Pookie Cafe in Sylhet">
+            </iframe>
+        </div>
+    </div>
+</section> 
+        
+        <section class="booking-section" id="booking">
+    <div class="container">
+        <h2 class="section-title reveal">Book Your Table</h2>
+        <p class="menu-intro">We'd love to have you. Fill out the form below to make a reservation.</p>
+
+        <form class="booking-form" action="https://formspree.io/f/xandyodr" method="POST">
+            <div class="form-group">
+                <input type="text" id="booking-name" name="name" required placeholder="Your Name">
+                <label for="booking-name">Your Name</label>
+            </div>
+            <div class="form-group">
+                <input type="tel" id="booking-phone" name="phone" required placeholder="Phone Number">
+                <label for="booking-phone">Phone Number</label>
+            </div>
+            <div class="form-group">
+                <input type="number" id="booking-guests" name="guests" min="1" max="8" required placeholder="Number of Guests">
+                <label for="booking-guests">Number of Guests</label>
+            </div>
+            <div class="form-group">
+                <input type="datetime-local" id="booking-datetime" name="datetime" required>
+                <label for="booking-datetime">Date & Time</label>
+            </div>
+            <button type="submit" class="btn btn-primary">Request Booking</button>
+        </form>
+    </div>
+</section>     
+
+        <section class="contact-section" id="contact">
+            <div class="container reveal">
+                <h2 class="section-title">Get in Touch</h2>
+                <p>Questions? Suggestions? We would love to hear from you!</p>
+                
+                <form class="contact-form" action="https://formspree.io/f/xandyodr" method="POST">
+                    <div class="form-group">
+                        <input type="text" id="name" name="name" required placeholder="Your Name">
+                        <label for="name">Your Name</label>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" id="email" name="email" required placeholder="Your Email">
+                        <label for="email">Your Email</label>
+                    </div>
+                    <div class="form-group">
+                        <textarea id="message" name="message" rows="5" required placeholder="Your Message"></textarea>
+                        <label for="message">Your Message</label>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Send Message</button>
+                </form>
+            </div>
+        </section>
+    </main>
+  
+    <footer class="main-footer">
+        <div class="footer-content container">
+            <div class="footer-column">
+                <h4 class="footer-heading">☕ Pookie Cafe</h4>
+                <p>Where every bean tells a story and every cup speaks joy. Join us for your daily dose of happiness.</p>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html">Our Team</a></li>
+                    <li><a href="#gallery">Gallery</a></li>
+                    <li><a href="#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">Visit Us</h4>
+                <p>123 Coffee Lane<br>Sylhet, Bangladesh</p>
+                <p><strong>Hours:</strong><br>Thu - Sat: 10am - 10pm<br>Fri: 3pm - 11pm</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>&copy; 2025 Pookie Cafe. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Shanta196" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/Tanjilase" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/Cyber-Mood" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <div id="lightbox" class="lightbox">
+        <span class="lightbox-close">&times;</span>
+        <img class="lightbox-content" id="lightbox-img" alt="Enlarged gallery view">
+    </div>
+
+</body>
+<div id="blog-modal" class="blog-modal">
+    <div class="blog-modal-content">
+        <span class="blog-modal-close">&times;</span>
+        <img src="" alt="Blog Post Image" class="blog-modal-image">
+        <h2 class="blog-modal-title"></h2>
+        <p class="blog-modal-meta"></p>
+        <div class="blog-modal-body">
+            </div>
+    </div>
+</div>
+</html>

@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Our Menu - Pookie Cafe</title>
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@700&family=Poppins:wght@400;500;600&display=swap" rel="stylesheet">
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css" integrity="sha512-SnH5WK+bZxgPHs44uWIX+LLJAJ9/2PkPKZ5QiAj6Ta86w+fsb2TkcmfRyVX3pBnMFcV7oQPJkl9QevSCWr3W6A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+</head>
+<body>
+
+    <header class="main-header scrolled"> <nav class="navbar container">
+            <a href="index.html" class="nav-logo">☕ Pookie Cafe</a>
+            
+            <div class="nav-menu-wrapper">
+                <ul class="nav-menu">
+                    <li><a href="index.html" class="nav-link">Home</a></li>
+                    <li><a href="about.html#about" class="nav-link">About</a></li>
+                    <li><a href="menu.html" class="nav-link active">Menu</a></li> 
+                    <li><a href="about.html#team" class="nav-link">Our Team</a></li>
+                    <li><a href="index.html#gallery" class="nav-link">Gallery</a></li>
+                    <li><a href="index.html#contact" class="nav-link">Contact</a></li>
+                </ul>
+            </div>
+
+            <div class="nav-toggle-wrapper">
+                <button id="theme-toggle" class="theme-toggle" title="Toggle theme">
+                    <i class="fas fa-moon"></i>
+                </button>
+                <button id="menu-toggle" class="menu-toggle" aria-label="Open menu" aria-expanded="false">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </div>
+        </nav>
+    </header>
+
+    <main>
+        <section class="detailed-menu">
+            <div class="container">
+                <h1 class="section-title">Our Full Menu</h1>
+                <p class="menu-intro">Freshly prepared with locally sourced ingredients and a whole lot of love.</p>
+
+                <div class="dietary-legend">
+                    <span class="legend-item"><i class="fas fa-leaf"></i> Vegan</span>
+                    <span class="legend-item"><i class="fas fa-seedling"></i> Vegetarian</span>
+                    <span class="legend-item"><i class="fas fa-bread-slice"></i> Gluten-Free Option</span>
+                </div>
+
+                <h2 class="menu-category-title">Espresso & Coffee</h2>
+                <div class="menu-item-grid">
+                    <div class="menu-item-card">
+                        <img src="media/espresso.jpg" loading="lazy" alt="Espresso Shot" class="menu-item-image">
+                        <div class="menu-item-details">
+                            <h3>Espresso</h3>
+                            <p class="item-description">A rich and aromatic shot of concentrated coffee.</p>
+                            <p class="item-price">$3.00</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="media/latte.jpg" loading="lazy" alt="Latte" class="menu-item-image">
+                        <div class="menu-item-details">
+                            <h3>Caffè Latte</h3>
+                            <p class="item-description">A smooth blend of espresso and steamed milk, topped with a light layer of foam.</p>
+                            <p class="item-price">$4.75</p>
+                            <div class="dietary-icons"><i class="fas fa-leaf" title="Vegan option available"></i> <i class="fas fa-bread-slice" title="Gluten-Free option available"></i></div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="media/cappu.jpeg" loading="lazy" alt="Cappuccino" class="menu-item-image">
+                        <div class="menu-item-details">
+                            <h3>Cappuccino</h3>
+                            <p class="item-description">The perfect balance of espresso, steamed milk, and a thick, airy foam.</p>
+                            <p class="item-price">$4.50</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="media/cold.jpg" loading="lazy" alt="Cold Brew" class="menu-item-image">
+                        <div class="menu-item-details">
+                            <h3>Cold Brew</h3>
+                            <p class="item-description">Steeped for 18 hours for a super smooth, low-acidity, and highly caffeinated coffee.</p>
+                            <p class="item-price">$5.00</p>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="menu-category-title">Freshly Baked Pastries</h2>
+                <div class="menu-item-grid">
+                    <div class="menu-item-card">
+                        <img src="media/croissant.jpg" loading="lazy" alt="Croissant" class="menu-item-image">
+                        <div class="menu-item-details">
+                            <h3>Butter Croissant</h3>
+                            <p class="item-description">Flaky, buttery, and baked to golden perfection throughout the day.</p>
+                            <p class="item-price">$3.50</p>
+                            <div class="dietary-icons"><i class="fas fa-seedling" title="Vegetarian"></i></div>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="media/brownie.jpg" loading="lazy" alt="Muffin" class="menu-item-image">
+                        <div class="menu-item-details">
+                            <h3>Chocolate Muffin</h3>
+                            <p class="item-description">A soft and moist muffin bursting with melting chocolate.</p>
+                            <p class="item-price">$3.75</p>
+                            <div class="dietary-icons"><i class="fas fa-bread-slice" title="Gluten-Free option available"></i></div>
+                        </div>
+                    </div>
+                </div>
+
+                <h2 class="menu-category-title">Hearty Sandwiches</h2>
+                <div class="menu-item-grid">
+                    <div class="menu-item-card">
+                        <img src="media/chicken.jpg" loading="lazy" alt="Spicy Chicken Sandwich" class="menu-item-image">
+                        <div class="menu-item-details">
+                            <h3>Spicy Chicken Panini</h3>
+                            <p class="item-description">Fried chicken, provolone cheese, and a spicy aioli pressed on fresh sourdough.</p>
+                            <p class="item-price">$9.50</p>
+                        </div>
+                    </div>
+                    <div class="menu-item-card">
+                        <img src="media/caprese.jpg" loading="lazy" alt="Caprese Sandwich" class="menu-item-image">
+                        <div class="menu-item-details">
+                            <h3>Caprese Sandwich</h3>
+                            <p class="item-description">Fresh mozzarella, ripe tomatoes, and basil pesto on a toasted ciabatta roll.</p>
+                            <p class="item-price">$8.75</p>
+                            <div class="dietary-icons"><i class="fas fa-seedling" title="Vegetarian"></i></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    
+    <footer class="main-footer">
+        <div class="footer-content container">
+            <div class="footer-column">
+                <h4 class="footer-heading">☕ Pookie Cafe</h4>
+                <p>Where every bean tells a story and every cup speaks joy. Join us for your daily dose of happiness.</p>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">Quick Links</h4>
+                <ul class="footer-links">
+                    <li><a href="about.html#about">About</a></li>
+                    <li><a href="menu.html">Menu</a></li>
+                    <li><a href="about.html#team">Our Team</a></li>
+                    <li><a href="index.html#gallery">Gallery</a></li>
+                    <li><a href="index.html#contact">Contact</a></li>
+                </ul>
+            </div>
+            <div class="footer-column">
+                <h4 class="footer-heading">Visit Us</h4>
+                <p>123 Coffee Lane<br>Sylhet, Bangladesh</p>
+                <p><strong>Hours:</strong><br>Thu - Sat: 10am - 10pm<br>Fri: 3pm - 11pm</p>
+            </div>
+        </div>
+        <div class="footer-bottom">
+            <div class="container">
+                <p>© 2025 Pookie Cafe. All rights reserved.</p>
+                <div class="social-icons">
+                    <a href="https://github.com/Shanta196" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/Tanjilase" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://github.com/Cyber-Mood" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
